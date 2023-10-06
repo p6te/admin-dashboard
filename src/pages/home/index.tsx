@@ -10,6 +10,8 @@ import {
   chartBoxRevenue,
   chartBoxUser,
 } from "../../data";
+import BarChartBox from "components/barChartBox";
+import PieChartBox from "components/pieChartBox";
 
 const Home = () => {
   return (
@@ -23,12 +25,18 @@ const Home = () => {
       <div className="box box3">
         <ChartBox {...chartBoxProduct} />
       </div>
-      <div className="box box4">{/* <ChartBox /> */}4</div>
+      <div className="box box4">
+        <PieChartBox />
+      </div>
       <div className="box box5">{/* <ChartBox /> */}5</div>
       <div className="box box6">6</div>
       <div className="box box7">7</div>
-      <div className="box box8">8</div>
-      <div className="box box9">9</div>
+      <div className="box box8">
+        <BarChartBox {...barChartBoxVisit} />
+      </div>
+      <div className="box box9">
+        <BarChartBox {...barChartBoxRevenue} />
+      </div>
     </div>
   );
 };
