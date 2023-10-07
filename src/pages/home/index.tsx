@@ -3,7 +3,6 @@ import "./home.scss";
 import ChartBox from "components/chartBox";
 
 import {
-  barChartBoxRevenue,
   barChartBoxVisit,
   chartBoxConversion,
   chartBoxProduct,
