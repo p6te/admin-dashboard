@@ -4,7 +4,7 @@ import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 
 type Props = {
   color: string;
-  icon: string;
+  icon?: string;
   title: string;
   dataKey: string;
   number: number | string;
