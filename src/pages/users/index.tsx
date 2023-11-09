@@ -3,8 +3,8 @@ import { GridColDef } from "@mui/x-data-grid";
 import "./Users.scss";
 import { useState } from "react";
 import { userRows } from "../../data";
-import DataTable from "components/dataTable";
-import Add from "components/add";
+import DataTable from "../../components/dataTable";
+import Add from "../../components/add";
 // import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [

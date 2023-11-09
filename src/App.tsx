@@ -1,15 +1,15 @@
-import Footer from "components/footer";
-import Menu from "components/menu";
-import Navbar from "components/navbar";
-import Home from "pages/home";
-import Login from "pages/login";
-import Product from "pages/product";
-import Products from "pages/products";
-import User from "pages/user";
-import Users from "pages/users";
+import Footer from "./components/footer";
+import Menu from "./components/menu";
+import Navbar from "./components/navbar";
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Product from "./pages/product";
+import Products from "./pages/products";
+import User from "./pages/user";
+import Users from "./pages/users";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import "styles/global.scss";
+import "./styles/global.scss";
 
 function App() {
   const Layout = () => {
