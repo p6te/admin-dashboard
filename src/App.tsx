@@ -29,38 +29,41 @@ function App() {
     );
   };
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/users",
-          element: <Users />,
-        },
-        {
-          path: "/users/:id",
-          element: <User />,
-        },
-        {
-          path: "/products",
-          element: <Products />,
-        },
-        {
-          path: "/products/:id",
-          element: <Product />,
-        },
-      ],
-    },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Layout />,
+        children: [
+          {
+            path: "/",
+            element: <Home />,
+          },
+          {
+            path: "/users",
+            element: <Users />,
+          },
+          {
+            path: "/users/:id",
+            element: <User />,
+          },
+          {
+            path: "/products",
+            element: <Products />,
+          },
+          {
+            path: "/products/:id",
+            element: <Product />,
+          },
+        ],
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+    ],
+    { basename: import.meta.env.DEV ? "/" : "/admin-dashboard/" }
+  );
   return <RouterProvider router={router} />;
 }
 
